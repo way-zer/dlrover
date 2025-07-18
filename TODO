@@ -1,0 +1,31 @@
+## Prime
+
+- [ ] Failover
+
+## Elastic
+
+- [ ] Failover
+
+### Worker
+
+- [ ] Node-Check
+  > Node-check stage, detect the fault node.
+- sync HCCL port for NPU
+- AsyncCheckpointSaver
+- Runtime Diagnosis
+- _set_numa_affinity
+
+- [ ] Failover
+
+## Demo
+
+- [*] Elastic Training
+<!-- - [ ] OpenRHLF -->
+
+---
+
+## Project: new ElasticWorker
+
+1. [ ] Clean RendezvousManager, KVStore
+2. [ ] Review Old ElasticWorker, Extract Features
+3. [ ] Document the differences in ElasticWorker, create PR.
