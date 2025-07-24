@@ -25,5 +25,6 @@ dev = [
     "kubernetes>=33.1.0",
     "pytest>=8.4.1",
     "pytest-forked>=1.6.0",
+    "transformers>=4.53.2",
 ]
 torch = ["torch", "tensordict"]

@@ -8,7 +8,7 @@
 
 ### Worker
 
-- [ ] Node-Check
+- [x] Node-Check
   > Node-check stage, detect the fault node.
 - sync HCCL port for NPU
 - AsyncCheckpointSaver
@@ -26,6 +26,15 @@
 
 ## Project: new ElasticWorker
 
-1. [ ] Clean RendezvousManager, KVStore
-2. [ ] Review Old ElasticWorker, Extract Features
-3. [ ] Document the differences in ElasticWorker, create PR.
+1. [x] Clean RendezvousManager, KVStore
+2. [x] Review Old ElasticWorker, Extract Features
+3. [x] Document the differences in ElasticWorker, create PR.
+
+## Later: Clean
+
+- [ ] extract constants
+- [ ] rename `workload_base` to `actor_base`
+
+## Note
+
+- ResourceMonitor.report_used_resource 收集CPU/MEM/GPU信息，上报给Master。Master会根据CPU判断Hang；TF会根据GPU进行容量优化；另外还会上报给BRAIN。
