@@ -22,9 +22,12 @@ dependencies = [
 [dependency-groups]
 dev = [
     "coverage>=7.9.2",
+    "deepspeed>=0.17.3",
     "kubernetes>=33.1.0",
     "pytest>=8.4.1",
     "pytest-forked>=1.6.0",
     "transformers>=4.53.2",
+    "verl>=0.3.0.post1",
+    "vllm>=0.10.0",
 ]
 torch = ["torch", "tensordict"]
