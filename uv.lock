@@ -746,7 +746,9 @@ dev = [
     { name = "deepspeed" },
     { name = "kubernetes" },
     { name = "pytest" },
+    { name = "pytest-async" },
     { name = "pytest-forked" },
+    { name = "pytest-mock" },
     { name = "transformers" },
     { name = "verl" },
     { name = "vllm" },
@@ -778,7 +780,9 @@ dev = [
     { name = "deepspeed", specifier = ">=0.17.3" },
     { name = "kubernetes", specifier = ">=33.1.0" },
     { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-async", specifier = ">=0.1.1" },
     { name = "pytest-forked", specifier = ">=1.6.0" },
+    { name = "pytest-mock", specifier = ">=3.14.1" },
     { name = "transformers", specifier = ">=4.53.2" },
     { name = "verl", specifier = ">=0.3.0.post1" },
     { name = "vllm", specifier = ">=0.10.0" },
@@ -3277,6 +3281,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pytest-async"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ff/b6/c15344fd2894fe93f15ce0f503d25afc2506ebe01a3c3ea52044169d510c/pytest_async-0.1.1.tar.gz", hash = "sha256:0d6ffd3ebac2f3aa47d606dbae1984750268a89dc8caf4a908ba61c60299cdfd", size = 5339, upload-time = "2020-02-26T17:31:21.138Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/89/4f/bdd43dd0838c2b0c0487a8de0480a30fb797e49abc4c8c68aca2912fd636/pytest_async-0.1.1-py3-none-any.whl", hash = "sha256:11cc41eef82592951d56c2bb9b0e6ab21b2f0f00663e78d95694a80d965be930", size = 2778, upload-time = "2020-02-26T17:31:18.587Z" },
+]
+
+[[package]]
 name = "pytest-forked"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3287,6 +3300,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/8c/c9/93ad2ba2413057ee694884b88cf7467a46c50c438977720aeac26e73fdb7/pytest-forked-1.6.0.tar.gz", hash = "sha256:4dafd46a9a600f65d822b8f605133ecf5b3e1941ebb3588e943b4e3eb71a5a3f", size = 9977, upload-time = "2023-02-12T23:22:27.544Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f4/af/9c0bda43e486a3c9bf1e0f876d0f241bc3f229d7d65d09331a0868db9629/pytest_forked-1.6.0-py3-none-any.whl", hash = "sha256:810958f66a91afb1a1e2ae83089d8dc1cd2437ac96b12963042fbb9fb4d16af0", size = 4897, upload-time = "2023-02-12T23:22:26.022Z" },
+]
+
+[[package]]
+name = "pytest-mock"
+version = "3.14.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/71/28/67172c96ba684058a4d24ffe144d64783d2a270d0af0d9e792737bddc75c/pytest_mock-3.14.1.tar.gz", hash = "sha256:159e9edac4c451ce77a5cdb9fc5d1100708d2dd4ba3c3df572f14097351af80e", size = 33241, upload-time = "2025-05-26T13:58:45.167Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/05/77b60e520511c53d1c1ca75f1930c7dd8e971d0c4379b7f4b3f9644685ba/pytest_mock-3.14.1-py3-none-any.whl", hash = "sha256:178aefcd11307d874b4cd3100344e7e2d888d9791a6a1d9bfe90fbc1b74fd1d0", size = 9923, upload-time = "2025-05-26T13:58:43.487Z" },
 ]
 
 [[package]]
