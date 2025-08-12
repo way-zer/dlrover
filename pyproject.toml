@@ -1,37 +1,39 @@
 [project]
 name = "dlrover"
-version = "0.5.0.dev0+ray_unified"
+version = "0.6.0.dev1+ray_unified_wz"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "clipstick>=0.6.1",
-    "deprecated",
-    "grpcio",
-    "omegaconf",
-    "packaging",
-    "psutil",
-    "pydantic",
-    "pynvml",
-    "ray[default,train]",
-    "requests",
-    "tornado",
-    "urllib3",
-]
+dependencies = ["deprecated", "packaging", "psutil", "pynvml", "requests"]
+
+[project.optional-dependencies]
+k8s = ["kubernetes", "tornado", "grpcio"]
+ray = ["ray[default,train]", "omegaconf", "pydantic"]
+torch = ["torch"]
+tensorflow = ["tensorflow"]
 
 [dependency-groups]
+ray_torch = [
+    "ray[default,train]",
+    "torch",
+    "omegaconf",
+    "pydantic",
+    "tensordict",
+]
 dev = [
-    "coverage>=7.9.2",
     "deepspeed>=0.17.3",
-    "gymnasium>=1.2.0",
-    "kubernetes>=33.1.0",
+    "transformers>=4.53.2",
+    "verl>=0.3.0.post1",
+    "vllm>=0.10.0",
+    #uv pip install --no-deps openrlhf --no-build --python-platform x86_64-unknown-linux-gnu
+]
+test = [
+    "coverage>=7.9.2",
     "pytest>=8.4.1",
     "pytest-async>=0.1.1",
     "pytest-cov>=6.2.1",
     "pytest-forked>=1.6.0",
     "pytest-mock>=3.14.1",
-    "transformers>=4.53.2",
-    "verl>=0.3.0.post1",
-    "vllm>=0.10.0",
 ]
-torch = ["torch", "tensordict"]
+[tool.uv]
+default-groups = ["dev", "test", "ray_torch"]
