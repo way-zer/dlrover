@@ -234,6 +234,15 @@ wheels = [
 ]
 
 [[package]]
+name = "backports-asyncio-runner"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8e/ff/70dca7d7cb1cbc0edb2c6cc0c38b65cba36cccc491eca64cabd5fe7f8670/backports_asyncio_runner-1.2.0.tar.gz", hash = "sha256:a5aa7b2b7d8f8bfcaa2b57313f70792df84e32a2a746f585213373f900b42162", size = 69893, upload-time = "2025-07-02T02:27:15.685Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/59/76ab57e3fe74484f48a53f8e337171b4a2349e506eabe136d7e01d059086/backports_asyncio_runner-1.2.0-py3-none-any.whl", hash = "sha256:0da0a936a8aeb554eccb426dc55af3ba63bcdc69fa1a600b5bb305413a4477b5", size = 12313, upload-time = "2025-07-02T02:27:14.263Z" },
+]
+
+[[package]]
 name = "blake3"
 version = "1.0.5"
 source = { registry = "https://pypi.org/simple" }
@@ -487,19 +496,6 @@ wheels = [
 ]
 
 [[package]]
-name = "clipstick"
-version = "0.6.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pydantic" },
-    { name = "rich" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/01/4a/75821a6eafb7759ee8fb18767e2d585acaf5eb6d650750cf863a5291a2c0/clipstick-0.6.1.tar.gz", hash = "sha256:f7cd156b3d82554463d410b49cc063fa7cd19e2389a5a518954c443b8a9807c5", size = 14254, upload-time = "2024-03-16T10:51:28.402Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/68/ef/83cf571a61bd505abb19b18a5f8e621a2e0633ff6f0a25b20ebd75b2de6a/clipstick-0.6.1-py3-none-any.whl", hash = "sha256:ae014e1e607019cc6e50869a08064b3da16a56021579c94d710aec9b3a5cd4d8", size = 15205, upload-time = "2024-03-16T10:51:26.268Z" },
-]
-
-[[package]]
 name = "cloudpickle"
 version = "3.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -750,16 +746,14 @@ wheels = [
 
 [[package]]
 name = "dlrover"
-version = "0.5.0.dev0+ray.unified"
+version = "0.6.0.dev7+ray.unified.wz"
 source = { virtual = "." }
 dependencies = [
-    { name = "clipstick" },
     { name = "deprecated" },
     { name = "packaging" },
     { name = "psutil" },
     { name = "pynvml" },
     { name = "requests" },
-    { name = "urllib3" },
 ]
 
 [package.optional-dependencies]
@@ -798,14 +792,15 @@ test = [
     { name = "coverage" },
     { name = "pytest" },
     { name = "pytest-async" },
+    { name = "pytest-asyncio" },
     { name = "pytest-cov" },
     { name = "pytest-forked" },
     { name = "pytest-mock" },
+    { name = "pytest-timeout" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "clipstick", specifier = ">=0.6.1" },
     { name = "deprecated" },
     { name = "grpcio", marker = "extra == 'k8s'" },
     { name = "kubernetes", marker = "extra == 'k8s'" },
@@ -819,7 +814,6 @@ requires-dist = [
     { name = "tensorflow", marker = "extra == 'tensorflow'" },
     { name = "torch", marker = "extra == 'torch'" },
     { name = "tornado", marker = "extra == 'k8s'" },
-    { name = "urllib3" },
 ]
 provides-extras = ["k8s", "ray", "torch", "tensorflow"]
 
@@ -841,9 +835,11 @@ test = [
     { name = "coverage", specifier = ">=7.9.2" },
     { name = "pytest", specifier = ">=8.4.1" },
     { name = "pytest-async", specifier = ">=0.1.1" },
+    { name = "pytest-asyncio", specifier = ">=1.1.0" },
     { name = "pytest-cov", specifier = ">=6.2.1" },
     { name = "pytest-forked", specifier = ">=1.6.0" },
     { name = "pytest-mock", specifier = ">=3.14.1" },
+    { name = "pytest-timeout", specifier = ">=2.4.0" },
 ]
 
 [[package]]
@@ -3600,6 +3596,19 @@ wheels = [
 ]
 
 [[package]]
+name = "pytest-asyncio"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "backports-asyncio-runner", marker = "python_full_version < '3.11'" },
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4e/51/f8794af39eeb870e87a8c8068642fc07bce0c854d6865d7dd0f2a9d338c2/pytest_asyncio-1.1.0.tar.gz", hash = "sha256:796aa822981e01b68c12e4827b8697108f7205020f24b5793b3c41555dab68ea", size = 46652, upload-time = "2025-07-16T04:29:26.393Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c7/9d/bf86eddabf8c6c9cb1ea9a869d6873b46f105a5d292d3a6f7071f5b07935/pytest_asyncio-1.1.0-py3-none-any.whl", hash = "sha256:5fe2d69607b0bd75c656d1211f969cadba035030156745ee09e7d71740e58ecf", size = 15157, upload-time = "2025-07-16T04:29:24.929Z" },
+]
+
+[[package]]
 name = "pytest-cov"
 version = "6.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -3636,6 +3645,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/71/28/67172c96ba684058a4d24ffe144d64783d2a270d0af0d9e792737bddc75c/pytest_mock-3.14.1.tar.gz", hash = "sha256:159e9edac4c451ce77a5cdb9fc5d1100708d2dd4ba3c3df572f14097351af80e", size = 33241, upload-time = "2025-05-26T13:58:45.167Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b2/05/77b60e520511c53d1c1ca75f1930c7dd8e971d0c4379b7f4b3f9644685ba/pytest_mock-3.14.1-py3-none-any.whl", hash = "sha256:178aefcd11307d874b4cd3100344e7e2d888d9791a6a1d9bfe90fbc1b74fd1d0", size = 9923, upload-time = "2025-05-26T13:58:43.487Z" },
+]
+
+[[package]]
+name = "pytest-timeout"
+version = "2.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ac/82/4c9ecabab13363e72d880f2fb504c5f750433b2b6f16e99f4ec21ada284c/pytest_timeout-2.4.0.tar.gz", hash = "sha256:7e68e90b01f9eff71332b25001f85c75495fc4e3a836701876183c4bcfd0540a", size = 17973, upload-time = "2025-05-05T19:44:34.99Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fa/b6/3127540ecdf1464a00e5a01ee60a1b09175f6913f0644ac748494d9c4b21/pytest_timeout-2.4.0-py3-none-any.whl", hash = "sha256:c42667e5cdadb151aeb5b26d114aff6bdf5a907f176a007a30b940d3d865b5c2", size = 14382, upload-time = "2025-05-05T19:44:33.502Z" },
 ]
 
 [[package]]
