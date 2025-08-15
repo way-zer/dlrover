@@ -4,7 +4,7 @@
 
 ## Elastic
 
-- [ ] Failover
+- [x] Failover
 
 ### Worker
 
@@ -15,7 +15,7 @@
 - Runtime Diagnosis
 - _set_numa_affinity
 
-- [ ] Failover
+- [x] Failover
 
 ## Demo
 
