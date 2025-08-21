@@ -1,10 +1,15 @@
-import runpy
-import sys
+import ray
 
 
-def main():
-    sys.argv = ["test_ray_async.py", "xxx", "xxx"]
-    runpy.run_path("local-bak/scratch/test_ray_async.py", run_name="__main__")
+class Actor:
+    async def debug(self):
+        from remote_pdb import RemotePdb
+
+        print("Debugging actor...")
+        RemotePdb("127.0.0.1", 4444).set_trace()
 
 
-import torch.distributed.rpc
+if __name__ == "__main__":
+    actor = ray.remote(Actor).remote()
+    ref = actor.debug.remote()
+    ray.get(ref)

@@ -1,6 +1,6 @@
 [project]
 name = "dlrover"
-version = "0.6.0.dev7+ray_unified_wz"
+version = "0.6.0.dev8+ray_unified_wz"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
