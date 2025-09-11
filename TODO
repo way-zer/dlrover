@@ -32,8 +32,8 @@
 
 ## Later: Clean
 
-- [ ] extract constants
-- [ ] rename `workload_base` to `actor_base`
+- [x] extract constants
+- [x] rename `workload_base` to `actor_base`
 
 ## Note
 

@@ -1,0 +1,742 @@
+{
+  "type": "drawnix",
+  "version": 1,
+  "source": "web",
+  "elements": [
+    {
+      "id": "CYbzx",
+      "data": {
+        "topic": {
+          "children": [
+            {
+              "text": "DiagnosisAction"
+            }
+          ],
+          "type": "paragraph"
+        }
+      },
+      "children": [
+        {
+          "id": "WdKDf",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "instance 节点id"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "JdwsD",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "特定instance/node_id"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 139,
+              "height": 20
+            },
+            {
+              "id": "MSjEp",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "MASTER_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 132,
+              "height": 20
+            },
+            {
+              "id": "BKWWy",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "LOCAL_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 121,
+              "height": 20
+            },
+            {
+              "id": "bNwPA",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "ANY_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph",
+                  "align": "center"
+                }
+              },
+              "children": [],
+              "width": 104,
+              "height": 20
+            }
+          ],
+          "width": 99,
+          "height": 20,
+          "isCollapsed": false
+        },
+        {
+          "id": "hehch",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "NoAction"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "WzrsQ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "NONE, LOCAL_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 168,
+              "height": 20
+            }
+          ],
+          "width": 60,
+          "height": 20
+        },
+        {
+          "id": "ATmrE",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "EventAction"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "XkDMh",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "LOCAL_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "djXEB",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ResourceCollectErrorDiagnostician GPU_LOST"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 301,
+                  "height": 20
+                }
+              ],
+              "width": 121,
+              "height": 20
+            },
+            {
+              "id": "EWbiy",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "MASTER_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "YmGZF",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "coordinate_solutions"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "WWikX",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "ResolveTrainingHangOperator"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 193,
+                      "height": 20
+                    }
+                  ],
+                  "width": 135,
+                  "height": 20
+                }
+              ],
+              "width": 132,
+              "height": 20
+            }
+          ],
+          "width": 78,
+          "height": 20
+        },
+        {
+          "id": "GiAyM",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "NodeAction"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "QMPHj",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Worker_0, RESTART_WORKER, ANY_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph",
+                  "align": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "pCbDW",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "DiagnosisMaster DIAG_HANG"
+                        }
+                      ],
+                      "type": "paragraph",
+                      "align": "center"
+                    }
+                  },
+                  "children": [],
+                  "width": 193,
+                  "height": 20
+                }
+              ],
+              "width": 306,
+              "height": 20
+            },
+            {
+              "id": "HAtkb",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "node, MASTER_RELAUNCH_WORKER, MASTER_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "jyGyz",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ConnectionPreCheckOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 195,
+                  "height": 20
+                }
+              ],
+              "width": 385,
+              "height": 20
+            },
+            {
+              "id": "TCedX",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "self, RESTART_WORKER, LOCAL_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "yyMzS",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "Agent"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "fEYKa",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "FailureNodeDiagnostician"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 165,
+                      "height": 20
+                    }
+                  ],
+                  "width": 39,
+                  "height": 20
+                }
+              ],
+              "width": 285,
+              "height": 20
+            },
+            {
+              "id": "HdZzn",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "self, RELAUNCH_WORKER, LOCAL_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "GHwWa",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "Agent"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 39,
+                  "height": 20
+                }
+              ],
+              "width": 299,
+              "height": 20
+            }
+          ],
+          "width": 76,
+          "height": 20
+        },
+        {
+          "id": "QYhcT",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "JobAbortionAction"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "EZmhJ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "JOB_ABORT, MASTER_INSTANCE"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "kMFdF",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "SchedulingPreCheckOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 193,
+                  "height": 20
+                }
+              ],
+              "width": 221,
+              "height": 20
+            }
+          ],
+          "width": 121,
+          "height": 20
+        }
+      ],
+      "width": 130,
+      "height": 25,
+      "layout": "right",
+      "isRoot": true,
+      "type": "mindmap",
+      "points": [
+        [
+          626.595458984375,
+          387.7498779296875
+        ]
+      ]
+    },
+    {
+      "id": "REaMf",
+      "data": {
+        "topic": {
+          "children": [
+            {
+              "text": "Disgnosis组件"
+            }
+          ],
+          "type": "paragraph"
+        }
+      },
+      "children": [
+        {
+          "id": "wWnrY",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "DiagnosticMaster"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "SFYkJ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Diagnostician"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "Wwfjc",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ResolveTrainingHangOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 193,
+                  "height": 20
+                },
+                {
+                  "id": "BZyii",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CheckTrainingHangOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 184,
+                  "height": 20
+                }
+              ],
+              "width": 88,
+              "height": 20
+            },
+            {
+              "id": "ykRjn",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "PreCheck"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "WnNfG",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "SchedulingPreCheckOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 193,
+                  "height": 20,
+                  "points": [
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "id": "ihjAe",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ConnectionPreCheckOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 195,
+                  "height": 20,
+                  "points": [
+                    [
+                      0,
+                      0
+                    ]
+                  ]
+                }
+              ],
+              "width": 63,
+              "height": 20
+            }
+          ],
+          "width": 114,
+          "height": 20
+        },
+        {
+          "id": "rBhRp",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "DiagnosisAgent"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "CDEiP",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Diagnostician"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "nwTyN",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "FailureNodeDiagnostician"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 165,
+                  "height": 20
+                },
+                {
+                  "id": "tCYHx",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ResourceCollectErrorDiagnostician"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 225,
+                  "height": 20
+                }
+              ],
+              "width": 88,
+              "height": 20
+            },
+            {
+              "id": "YmcFS",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "DataCollector"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "ftJyj",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "XpuTimerMetricsCollector"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 169,
+                  "height": 20
+                },
+                {
+                  "id": "dJAxH",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ResourceCollector"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 120,
+                  "height": 20
+                }
+              ],
+              "width": 89,
+              "height": 20
+            }
+          ],
+          "width": 102,
+          "height": 20
+        }
+      ],
+      "width": 115,
+      "height": 25,
+      "layout": "right",
+      "isRoot": true,
+      "type": "mindmap",
+      "points": [
+        [
+          660.499755859375,
+          -298.8712158203125
+        ]
+      ]
+    }
+  ],
+  "viewport": {
+    "zoom": 1,
+    "origination": [
+      167.417724609375,
+      -616.0548095703125
+    ]
+  }
+}
