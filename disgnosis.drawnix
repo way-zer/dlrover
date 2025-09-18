@@ -503,22 +503,6 @@
               },
               "children": [
                 {
-                  "id": "Wwfjc",
-                  "data": {
-                    "topic": {
-                      "children": [
-                        {
-                          "text": "ResolveTrainingHangOperator"
-                        }
-                      ],
-                      "type": "paragraph"
-                    }
-                  },
-                  "children": [],
-                  "width": 193,
-                  "height": 20
-                },
-                {
                   "id": "BZyii",
                   "data": {
                     "topic": {
@@ -532,6 +516,22 @@
                   },
                   "children": [],
                   "width": 184,
+                  "height": 20
+                },
+                {
+                  "id": "Wwfjc",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ResolveTrainingHangOperator"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 193,
                   "height": 20
                 }
               ],
@@ -726,8 +726,346 @@
       "type": "mindmap",
       "points": [
         [
-          660.499755859375,
-          -298.8712158203125
+          660.468505859375,
+          -351.1563720703125
+        ]
+      ]
+    },
+    {
+      "id": "ssyym",
+      "type": "geometry",
+      "shape": "rectangle",
+      "angle": 0,
+      "opacity": 1,
+      "textHeight": 20,
+      "text": {
+        "children": [
+          {
+            "text": "Task_Failed"
+          }
+        ],
+        "type": "paragraph",
+        "align": "center"
+      },
+      "points": [
+        [
+          1859.593505859375,
+          587.3826904296875
+        ],
+        [
+          1970.007568359375,
+          632.3826904296875
+        ]
+      ],
+      "strokeWidth": 2
+    },
+    {
+      "id": "WnAFG",
+      "type": "arrow-line",
+      "shape": "elbow",
+      "source": {
+        "marker": "none",
+        "connection": [
+          0,
+          0.5
+        ],
+        "boundId": "ssyym"
+      },
+      "texts": [],
+      "target": {
+        "marker": "arrow"
+      },
+      "opacity": 1,
+      "points": [
+        [
+          1907.001708984375,
+          567.1873779296875
+        ],
+        [
+          1735.282958984375,
+          565.0819091796875
+        ]
+      ],
+      "strokeWidth": 2
+    },
+    {
+      "id": "PjEBk",
+      "data": {
+        "topic": {
+          "children": [
+            {
+              "text": "Metric"
+            }
+          ],
+          "type": "paragraph"
+        }
+      },
+      "children": [
+        {
+          "id": "XAmtE",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "CPU percent"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [],
+          "width": 83,
+          "height": 20
+        },
+        {
+          "id": "Qynex",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "Mem MB"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "nKpDJ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "psutil.virtual_memory"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 139,
+              "height": 20
+            }
+          ],
+          "width": 57,
+          "height": 20
+        },
+        {
+          "id": "PBeaM",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "gpus allocated/reserved/all"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "ekRdZ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "torch.cuda.memory_allocated()"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 202,
+              "height": 20
+            },
+            {
+              "id": "crBwP",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "pynvml.nvmlDeviceGetMemoryInfo"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 226,
+              "height": 20
+            },
+            {
+              "id": "dQKjx",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "pynvml.nvmlDeviceGetUtilizationRates"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 249,
+              "height": 20
+            }
+          ],
+          "width": 174,
+          "height": 20
+        },
+        {
+          "id": "nZczi",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "XPU Timer"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "mPhXE",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "XPU_TIMER_COMMON_HANG"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 198,
+              "height": 20
+            }
+          ],
+          "width": 70,
+          "height": 20
+        }
+      ],
+      "width": 52,
+      "height": 25,
+      "layout": "right",
+      "isRoot": true,
+      "type": "mindmap",
+      "points": [
+        [
+          1740.056396484375,
+          -522.3048095703125
+        ]
+      ]
+    },
+    {
+      "id": "eydTB",
+      "data": {
+        "topic": {
+          "children": [
+            {
+              "text": "目前所有诊断流程"
+            }
+          ],
+          "type": "paragraph"
+        }
+      },
+      "children": [
+        {
+          "id": "srXBZ",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "PreCheck"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [],
+          "width": 63,
+          "height": 20
+        },
+        {
+          "id": "XRHjN",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "Runtime"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "RazQk",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "XPU_Timer"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "HEDYy",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "单节点所有卡HANG，且持续时间>5分钟"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 254,
+                  "height": 20
+                }
+              ],
+              "width": 72,
+              "height": 20
+            }
+          ],
+          "width": 54,
+          "height": 20
+        },
+        {
+          "id": "KfHcm",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "OnFail"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [],
+          "width": 41,
+          "height": 20
+        }
+      ],
+      "width": 144,
+      "height": 25,
+      "layout": "right",
+      "isRoot": true,
+      "type": "mindmap",
+      "points": [
+        [
+          1722.665771484375,
+          -41.5391845703125
         ]
       ]
     }
@@ -735,8 +1073,8 @@
   "viewport": {
     "zoom": 1,
     "origination": [
-      167.417724609375,
-      -616.0548095703125
+      1118.845458984375,
+      -595.3048095703125
     ]
   }
 }

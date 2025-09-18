@@ -1,6 +1,6 @@
 [project]
 name = "dlrover"
-version = "0.6.0.dev13+verl-e2e"
+version = "0.6.0.dev16+env_parse"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
