@@ -986,9 +986,77 @@
               "type": "paragraph"
             }
           },
-          "children": [],
+          "children": [
+            {
+              "id": "sfXiF",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Scheduling"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "fWRdQ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "K8S, Pending, create_time>10分钟"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 224,
+                  "height": 20
+                }
+              ],
+              "width": 72,
+              "height": 20
+            },
+            {
+              "id": "kaNKQ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Connection"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "rWZfE",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "等待所有Agent连接，1分钟一次，尝试15次"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 270,
+                  "height": 20
+                }
+              ],
+              "width": 75,
+              "height": 20
+            }
+          ],
           "width": 63,
-          "height": 20
+          "height": 20,
+          "isCollapsed": true
         },
         {
           "id": "XRHjN",
@@ -1003,6 +1071,72 @@
             }
           },
           "children": [
+            {
+              "id": "PTbMn",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "ResourceCollector"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "tRkec",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "cpu利用率连续n分钟低于一定值，判断HNAG"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 282,
+                  "height": 20,
+                  "isCollapsed": false
+                },
+                {
+                  "id": "NiMcK",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "资源采集，nvml调用报错，捕获特定关键词GPU_LOST"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 341,
+                  "height": 20
+                },
+                {
+                  "id": "PRQRj",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "传给Brain，用作PS资源优化"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 177,
+                  "height": 20
+                }
+              ],
+              "width": 120,
+              "height": 20
+            },
             {
               "id": "RazQk",
               "data": {
@@ -1035,6 +1169,39 @@
               ],
               "width": 72,
               "height": 20
+            },
+            {
+              "id": "FyedG",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "REST Metric API"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "btYzn",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "通过DCGM之类外部接口，取Tensor利用率，长期平均值小于0.001判断为Hang"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 476,
+                  "height": 40
+                }
+              ],
+              "width": 105,
+              "height": 20
             }
           ],
           "width": 54,
@@ -1052,7 +1219,41 @@
               "type": "paragraph"
             }
           },
-          "children": [],
+          "children": [
+            {
+              "id": "FhHNi",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "FailureNode"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "nHCBX",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "读指定配置文件，判断是否存在指定关键词"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 266,
+                  "height": 20
+                }
+              ],
+              "width": 78,
+              "height": 20
+            }
+          ],
           "width": 41,
           "height": 20
         }
@@ -1073,8 +1274,8 @@
   "viewport": {
     "zoom": 1,
     "origination": [
-      1118.845458984375,
-      -595.3048095703125
+      875.845458984375,
+      -690.3048095703125
     ]
   }
 }
